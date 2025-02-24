@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Demo</title>
+    <style>
+        table {
+            width: 70%;
+            margin: auto;
+        }
+        table, tr, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 11px;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr style="background-color: lightblue;">
+                <th rowspan="2">Name</th>
+                <th rowspan="2">ID</th>
+                <th colspan="2">Membership Dates</th>
+                <th rowspan="2">Balance</th>
+            </tr>
+            <tr>
+                <th style="background-color: green;">Joint</th>
+                <th style="background-color: red;">Canceled</th>
+            </tr>
+        </thead>
+        <tbody style="text-align: center;">
+            <tr>
+                <td style="text-align: left; background-color: aquamarine;">Lionel Messi</td>
+                <td>F-00001</td>
+                <td>2006/Feb/14</td>
+                <td>N/A</td>
+                <td>N/A</td>
+            </tr>
+            <tr style="background-color: lightgray;">
+                <td style="text-align: left; background-color: aquamarine;">CR7</td>
+                <td>F-00002</td>
+                <td>2004/Feb/14</td>
+                <td>N/A</td>
+                <td>N/A</td>
+            </tr>
+            <tr>
+                <td style="text-align: left; background-color: aquamarine;">Meymar Jr</td>
+                <td>F-00003</td>
+                <td>2004/Feb/14</td>
+                <td>N/A</td>
+                <td>N/A</td>
+            </tr>
+        </tbody>
+        <tfoot style="background-color: lightblue;">
+            <tr style="font-weight: bold;">
+                <td style="text-align: right; color: brown;" colspan="4">Total Balance</td>
+                <td style="text-align: center;">N/A</td>
+            </tr>
+        </tfoot>
+    </table>
+    
+</body>
+</html>
