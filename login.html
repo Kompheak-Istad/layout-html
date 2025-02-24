@@ -47,9 +47,8 @@
             width: 360px;
             margin: auto;
             padding: 11px;
-            background-color: whitesmoke;
-            box-shadow: 0px 0px 1px 1px lightgray;
-            border-radius: 4px;
+            background-color: rgb(228, 226, 226);
+            border-radius: 11px;
             font-family: sans-serif;
             justify-content: center;
         }
@@ -61,11 +60,42 @@
             margin: 27px;
         }
 
+        .control input {
+            width: 278px;
+            padding: 11px;
+            margin-bottom: 18px;
+            border: none;
+            border-radius: 8px;
+            font-size: medium;
+        }
+
+        .control input:focus {
+            outline: 0.5px solid darkblue;
+
+        }
+
         .control-inline {
             display: flex;
             flex-direction: row;
             justify-content: center;
             text-align: center;
+        }
+
+        .control-inline input {
+            width: 150px;
+            font-size: large;
+            font-weight: bold;
+            background-color: darkblue;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            padding: 11px;
+        }
+
+        .control-inline input:hover {
+            transform: scale(0.98);
+            transition: 0.11s;
+            opacity: 0.8;
         }
 
         footer {
@@ -126,32 +156,20 @@
             <h2>Login Form</h2>
         </div>
         <div class="control-inline">
-            <input
-                style="width: 150px; padding: 11px; color: white; background-color: darkblue; border: none; border-radius: 4px; font-size: large; font-weight: bold;"
-                type="submit" value="Login">
-            <input
-                style="width: 150px; padding: 11px; background-color: white; border: none; border-radius: 4px; box-shadow: 0px 0px 1px 1px lightgray; font-size: large; font-weight: bold;"
-                type="submit" value="Signup">
+            <input type="submit" value="Login">
+            <input style="background-color: white; color: black;" class="input1" type="submit" value="Signup">
         </div>
         <div style="align-items: center;" class="control">
-            <input
-                style="width: 278px; padding: 11px; margin-bottom: 18px; border: none; border-radius: 4px; box-shadow: 0px 0px 1px 1px lightgray; font-size: medium;"
-                type="email" name="" id="E-mail" placeholder="Email Address">
-            <input
-                style="width: 278px; padding: 11px; margin-bottom: 11px; border: none; border-radius: 4px; box-shadow: 0px 0px 1px 1px lightgray; font-size: medium;"
-                type="password" name="" id="password" placeholder="Password">
-            <!-- <a style="color: #cc43a9; align-self: start;" href="#">Forgot password?</a> -->
-            <span style="color: darkblue; align-self: start;">Forgot password?</span>
+            <input type="email" name="" id="E-mail" placeholder="Email Address">
+            <input style=" margin-bottom: 11px;" type="password" name="" id="password" placeholder="Password">
+            <a style="color: darkblue; align-self: start; text-decoration-line: none; margin-left: 3px;" href="#">Forgot password?</a>
         </div>
         <div class="control-inline">
-            <input
-                style="width: 300px; padding: 11px; color: white; background-color: darkblue; border: none; border-radius: 4px; font-size: larger; font-weight: bold;"
-                type="submit" value="Login">
+            <input style="width: 300px;" type="submit" value="Login">
         </div>
         <div style="text-align: center; margin-top: 27px; margin-bottom: 27px;">
             <span>Not a member?</span>
-            <span style="color: darkblue;">Signup now</span>
-            <!-- <a style="color: #CC43A9;" href="#">Signup now</a> -->
+            <a style="color: darkblue; text-decoration-line: none;" href="#">Signup now</a>
         </div>
     </form>
 
